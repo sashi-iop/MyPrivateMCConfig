@@ -1,0 +1,65 @@
+# ============================================================
+# BSM Higgs Masses and Widths
+# ============================================================
+set param_card mass 5000025 152
+set param_card mass 5000030 152
+set param_card decay 5000025 1.000000e+00
+set param_card decay 5000030 5.00000e-01
+
+# ============================================================
+# SM Standard Parameters
+# ============================================================
+set param_card mass 5 4.180000e+00
+set param_card mass 6 1.726900e+02
+set param_card mass 25 1.250000e+02
+set param_card decay 25 4.07e-3
+set param_card sminputs 1 1.280000e+02
+set param_card sminputs 2 1.166378e-05
+set param_card sminputs 3 1.300000e-01
+
+# ============================================================
+# Scalar Lagrangian Parameters & Mixing
+# ============================================================
+set param_card scalarlagparam 3 1.294330e-01
+set param_card scalarlagparam 4 -3.351830e+01
+set param_card scalarlagparam 5 3.515870e+00
+set param_card scalarlagparam 6 7.422280e-01
+set param_card scalarlagparam 7 2.462200e+02
+set param_card scalarlagparam 8 1.000000e+00
+
+set param_card scalarmix 1 1 9.950040e-01
+set param_card scalarmix 1 2 9.983340e-02
+set param_card scalarmix 2 1 -9.983340e-02
+set param_card scalarmix 2 2 9.950040e-01
+
+set param_card chargedmix 1 1 9.999670e-01
+set param_card chargedmix 1 2 -8.122550e-03
+set param_card chargedmix 2 1 8.122550e-03
+set param_card chargedmix 2 2 9.999670e-01
+
+# ============================================================
+# Fermion Mixing Matrices
+# ============================================================
+set param_card udlmix 1 1 1.000000e+00
+set param_card udlmix 2 2 1.000000e+00
+set param_card udlmix 3 3 1.000000e+00
+
+set param_card udrmix 1 1 1.000000e+00
+set param_card udrmix 2 2 1.000000e+00
+set param_card udrmix 3 3 1.000000e+00
+
+set param_card uelmix 1 1 1.000000e+00
+set param_card uelmix 2 2 1.000000e+00
+set param_card uelmix 3 3 1.000000e+00
+
+set param_card uermix 1 1 1.000000e+00
+set param_card uermix 2 2 1.000000e+00
+set param_card uermix 3 3 1.000000e+00
+
+set param_card uulmix 1 1 1.000000e+00
+set param_card uulmix 2 2 1.000000e+00
+set param_card uulmix 3 3 1.000000e+00
+
+set param_card uurmix 1 1 1.000000e+00
+set param_card uurmix 2 2 1.000000e+00
+set param_card uurmix 3 3 1.000000e+00

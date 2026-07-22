@@ -1,0 +1,14 @@
+import model TSM_Y0
+define p = g u c d s b u~ c~ d~ s~ b~
+define j = g u c d s b u~ c~ d~ s~ b~
+
+# CASE 1: BSM W* is Leptonic, SM W is Hadronic
+generate p p > t t~, (t > b hp2, (hp2 > l+ vl z, z > l+ l-)), (t~ > w- b~, w- > j j)
+add process p p > t t~, (t~ > b~ hp2c, (hp2c > l- vl~ z, z > l+ l-)), (t > w+ b, w+ > j j)
+
+# CASE 2: BSM W* is Hadronic, SM W is Leptonic
+add process p p > t t~, (t > b hp2, (hp2 > j j z, z > l+ l-)), (t~ > w- b~, w- > l- vl~)
+add process p p > t t~, (t~ > b~ hp2c, (hp2c > j j z, z > l+ l-)), (t > w+ b, w+ > l+ vl)
+
+output TSM_HWZ -nojpeg
+
