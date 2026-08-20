@@ -56,7 +56,26 @@ cmsRun get_xsec.py
 
 ```
 
-### 2. Output and Interpretation
+### 2. A simple and general method
+
+1. download the code snippet of the `genXsecAnalyzer`,
+```CLI
+curl https://raw.githubusercontent.com/cms-sw/genproductions/master/Utilities/calculateXSectionAndFilterEfficiency/genXsec_cfg.py -o genXSecAnalyzer_cfg.py
+```
+2. Obtain the miniAOD root file path
+```CLI
+dasgoclient --query="parent dataset=NANOAOD DATASET PATH"
+```
+```CLI
+dasgoclient --query="file dataset=MINIAOW DATASET PATH" | head -n 1
+```
+
+3. execute the `cmsRun` commaand (make sure that the `CMSSW` version must be matched with the **MINIAOD** data structure
+```CLI
+cmsRun genXSecAnalyzer_cfg.py maxEvents=-1 inputFiles="root://xrootd-cms.infn.it//{root file path}"
+```
+
+### 3. Output and Interpretation
 
 At the end of the `cmsRun` execution, you will see a summary block like this:
 
